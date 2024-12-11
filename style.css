@@ -1,0 +1,12 @@
+:root {
+    --black: #000000;
+    --gold: #bf8f00;
+  }
+  
+body { 
+    background-color: var(--black); 
+}
+
+h1 {
+    color: var(--gold);
+}
