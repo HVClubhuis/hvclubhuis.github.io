@@ -1,0 +1,22 @@
+:root {
+    --black: #000000;
+    --gold: #bf8f00;
+  }
+
+  @font-face {
+    font-family: "ALGER";
+    src:url('./fonts/ALGER.woff') format('woff'),
+        url('./fonts/ALGER.TTF') format('truetype');
+}
+
+body { 
+    background-color: var(--black); 
+}
+
+h1 {
+    font-family: 'ALGER';
+    font-weight: normal;
+    color: var(--gold);
+    -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
+}
