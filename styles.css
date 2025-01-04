@@ -1,6 +1,7 @@
 :root {
     --black: #000000;
     --gold: #bf8f00;
+    font-size: x-large;
   }
 
   @font-face {
@@ -67,6 +68,66 @@ header {
     gap: 15px;
 }
 
+.header-column-right a {
+    padding: 5px 10px;
+}
+
+.header-column-right a:hover {
+    background-color: var(--gold);
+    color: var(--black);
+    border-radius: 5px;
+}
+
+.header-column-right a:active {
+    background-color: var(--gold);
+    color: var(--black);
+    border-radius: 5px;
+}
+
+/* Dropdown-container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hoofdlink (Faciliteiten) */
+.dropdown-btn {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+/* Dropdown-menu (verborgen standaard) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--black);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    min-width: 150px;
+}
+
+/* Stijl voor dropdown-links */
+.dropdown-content a {
+    display: block;
+    color: var(--gold);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Hover-effect voor dropdown-links */
+.dropdown-content a:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+/* Toon dropdown bij hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 .main-row {
     display: flex;
     align-items: center;
@@ -77,7 +138,6 @@ header {
 .main-column-left, .main-column-right {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--gold);
     padding: 15px;
     width: 25vw;
 }
