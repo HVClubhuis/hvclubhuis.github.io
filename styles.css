@@ -59,6 +59,10 @@ header {
     padding: 0 15px 0 15px;
 }
 
+#mobile-menu {
+    display: none;
+}
+
 .header-column-middle {
     justify-content: center;
 }
@@ -159,7 +163,6 @@ footer {
     border-top: 1px solid var(--gold);
     width: 100vw;
     padding: 10px;
-    bottom: 0;
 }
 
 .footer-column-left,
@@ -184,3 +187,23 @@ footer {
     height: 100px;
 }
 
+
+
+/* CSS for mobile devices */
+@media (max-width: 768px) {
+    * {
+        flex-direction: column;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
+
+    .main-column-left, .main-column-right {
+        width: auto;
+    }
+
+    .header-column-right {
+        display: none;
+    }
+}
