@@ -9,8 +9,46 @@
         url('./fonts/ALGER.TTF') format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
 body { 
     background-color: var(--black); 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--gold);
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    padding: 10px;
+}
+
+.header-column-left {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.header-column-middle {
+    display: flex;
+    align-items: center;
+}
+
+.header-column-right {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+
+footer {
+    background-color: var(--gold);
+    width: 100vw;
 }
 
 h1 {
@@ -20,3 +58,9 @@ h1 {
     -webkit-font-smoothing: antialiased; /* Chrome, Safari */
     -moz-osx-font-smoothing: grayscale; /* Firefox */
 }
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
