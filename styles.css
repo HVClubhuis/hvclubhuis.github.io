@@ -46,6 +46,27 @@ header {
     float: right;
 }
 
+.main-row {
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.main-column-left, .main-column-right {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gold);
+    padding: 15px;
+    min-width: 25vw;
+}
+
+.main-column-left {
+}
+
+.main-column-right {
+}
+
 
 footer {
     display: flex;
