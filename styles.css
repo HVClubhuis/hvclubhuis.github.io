@@ -12,13 +12,33 @@
 * {
     box-sizing: border-box;
     margin: 0px;
+    color: var(--gold);
 }
 
 body{ 
     background-color: var(--black);
 }
 
+h1 {
+    font-family: 'ALGER';
+    font-weight: normal;
+    color: var(--gold);
+    -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
+}
+
+a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+}
+
 header {
+    font-family: 'ALGER';
+    font-weight: normal;
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--gold);
@@ -29,21 +49,22 @@ header {
     padding: 10px;
 }
 
-.header-column-left {
-    display: flex;
-    align-items: center;
-    float: left;
-}
-
-.header-column-middle {
-    display: flex;
-    align-items: center;
-}
-
+.header-column-left,
+.header-column-middle,
 .header-column-right {
     display: flex;
     align-items: center;
-    float: right;
+    flex: 1;
+    padding: 0 15px 0 15px;
+}
+
+.header-column-middle {
+    justify-content: center;
+}
+
+.header-column-right {
+    justify-content: end;
+    gap: 15px;
 }
 
 .main-row {
@@ -55,10 +76,10 @@ header {
 
 .main-column-left, .main-column-right {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     border: 1px solid var(--gold);
     padding: 15px;
-    min-width: 25vw;
+    width: 25vw;
 }
 
 .main-column-left {
@@ -69,6 +90,8 @@ header {
 
 
 footer {
+    font-family: 'ALGER';
+    font-weight: normal;
     display: flex;
     align-items: center;
     position: absolute;
@@ -79,30 +102,21 @@ footer {
     bottom: 0;
 }
 
-.footer-column-left {
-    display: flex;
-    align-items: center;
-    float: left;
-}
-
-.footer-column-middle {
-    display: flex;
-    align-items: center;
-}
-
+.footer-column-left,
+.footer-column-middle,
 .footer-column-right {
     display: flex;
     align-items: center;
-    float: right;
+    flex: 1;
+    padding: 0 15px 0 15px;
 }
 
+.footer-column-middle {
+    justify-content: center;
+}
 
-h1 {
-    font-family: 'ALGER';
-    font-weight: normal;
-    color: var(--gold);
-    -webkit-font-smoothing: antialiased; /* Chrome, Safari */
-    -moz-osx-font-smoothing: grayscale; /* Firefox */
+.footer-column-right {
+    justify-content: end;
 }
 
 .logo {

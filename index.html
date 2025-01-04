@@ -22,17 +22,28 @@
     <header>
         <a href="index.html" class="header-column-left"><img src="img/HVClubhuis_logo.png" alt="HV Clubhuis logo" class="logo"></a>
         <div class="header-column-middle"></div>
-        <div class="header-column-right"></div>
+        <div class="header-column-right">
+            <a href="loading.html">loading</a>
+            <a href="Template.html">Template</a>
+        </div>
     </header>
     <main>
         <div class="main-row">
-            <div class="main-column-left"><h1>@HVCLUBHUIS</h1></div>
+            <div class="main-column-left">
+                <h1>@HVCLUBHUIS</h1>
+                <p>Dit is een test pagina om  een template op te maken. Deze template ga ik vaker gebruiken per pagina zodat ik niet altijd van scratch hoef te beginnen. Tevens is dit een site in development en moet hier nog niet met een serieus oog naar gekeken worden.</p>
+            </div>
             <div class="main-column-right"></div>
         </div>
     </main>
     <footer>
-        <div class="footer-column-left"> <img src="img/HVClubhuis_logo.png" alt="HV Clubhuis logo" class="logo"></div>
-        <div class="footer-column-middle"></div>
+        <div class="footer-column-left"></div>
+        <div class="footer-column-middle">
+            <p>Copyright &copy; <span id="year"></span> Dennis Geerlof</p>
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+        </div>
         <div class="footer-column-right"></div>
     </footer>
 </body>
