@@ -14,14 +14,15 @@
     margin: 0px;
 }
 
-body { 
-    background-color: var(--black); 
+body{ 
+    background-color: var(--black);
 }
 
 header {
     display: flex;
     align-items: center;
-    background-color: var(--gold);
+    border-bottom: 1px solid var(--gold);
+    background-color: var(--black);
     position: sticky;
     top: 0;
     width: 100vw;
@@ -47,9 +48,33 @@ header {
 
 
 footer {
-    background-color: var(--gold);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: var(--black);
+    border-top: 1px solid var(--gold);
     width: 100vw;
+    padding: 10px;
+    bottom: 0;
 }
+
+.footer-column-left {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.footer-column-middle {
+    display: flex;
+    align-items: center;
+}
+
+.footer-column-right {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
 
 h1 {
     font-family: 'ALGER';
