@@ -8,6 +8,7 @@
     font-family: "ALGER";
     src: url('https://hvclubhuis.github.io/fonts/ALGER.woff') format('woff'),
         url('https://hvclubhuis.github.io/fonts/ALGER.TTF') format('truetype');
+    font-display: swap;
 }
 
 /* General scrollbar styling for all browsers */
@@ -224,6 +225,11 @@ footer {
     .main-column-left, .main-column-right {
         width: auto;
     }
+
+    main > *:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    
 
     .header-column-right {
         display: none; /* Hide by default */
