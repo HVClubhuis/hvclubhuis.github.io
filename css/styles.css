@@ -10,6 +10,11 @@
         url('https://hvclubhuis.github.io/fonts/ALGER.TTF') format('truetype');
 }
 
+/* General scrollbar styling for all browsers */
+html {
+    scrollbar-color: var(--gold) var(--black);
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -20,7 +25,7 @@ body {
     background-color: var(--black);
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'ALGER';
     font-weight: normal;
     color: var(--gold);
@@ -46,7 +51,7 @@ header {
     background-color: var(--black);
     position: sticky;
     top: 0;
-    width: 100vw;
+    width: 100%;
     padding: 10px;
 }
 
@@ -157,10 +162,9 @@ footer {
     font-weight: normal;
     display: flex;
     align-items: center;
-    position: absolute;
     background-color: var(--black);
     border-top: 1px solid var(--gold);
-    width: 100vw;
+    width: 100%;
     padding: 10px;
     bottom: 0;
 }
