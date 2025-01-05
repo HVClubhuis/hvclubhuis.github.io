@@ -163,6 +163,7 @@ footer {
     border-top: 1px solid var(--gold);
     width: 100vw;
     padding: 10px;
+    bottom: 0;
 }
 
 .footer-column-left,
@@ -193,6 +194,10 @@ footer {
 @media (max-width: 768px) {
     * {
         flex-direction: column;
+    }
+
+    footer {
+        bottom: auto;
     }
 
     .header-column-left {
