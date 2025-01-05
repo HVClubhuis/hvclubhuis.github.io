@@ -2,11 +2,11 @@
     --black: #000000;
     --gold: #bf8f00;
     font-size: x-large;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "ALGER";
-    src:url('./fonts/ALGER.woff') format('woff'),
+    src: url('./fonts/ALGER.woff') format('woff'),
         url('./fonts/ALGER.TTF') format('truetype');
 }
 
@@ -16,7 +16,7 @@
     color: var(--gold);
 }
 
-body{ 
+body {
     background-color: var(--black);
 }
 
@@ -70,6 +70,7 @@ header {
 .header-column-right {
     justify-content: end;
     gap: 15px;
+    transition: all 0.3s ease;
 }
 
 .header-column-right a {
@@ -131,7 +132,6 @@ header {
     display: block;
 }
 
-
 .main-row {
     display: flex;
     align-items: center;
@@ -151,7 +151,6 @@ header {
 
 .main-column-right {
 }
-
 
 footer {
     font-family: 'ALGER';
@@ -188,12 +187,14 @@ footer {
     height: 100px;
 }
 
-
-
 /* CSS for mobile devices */
 @media (max-width: 768px) {
     * {
         flex-direction: column;
+    }
+
+    header {
+        align-items: start;
     }
 
     footer {
@@ -202,10 +203,18 @@ footer {
 
     .header-column-left {
         flex-direction: row;
+        justify-content: flex-start; /* Aligns logo to the left */
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
     }
 
     #mobile-menu {
+        position: absolute;
         display: block;
+        right: 15px;
     }
 
     .main-column-left, .main-column-right {
@@ -213,6 +222,18 @@ footer {
     }
 
     .header-column-right {
-        display: none;
+        display: none; /* Hide by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust to be below the header */
+        right: 10px;
+        background-color: var(--black);
+        padding: 10px;
+        border: 1px solid var(--gold);
+        border-radius: 5px;
+    }
+
+    .header-column-right.show {
+        display: flex; /* Show when toggled */
     }
 }

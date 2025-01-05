@@ -22,13 +22,19 @@
 <body>
     <header>
         <div  class="header-column-left">
-            <i class="fa-solid fa-bars" id="mobile-menu"></i>
             <a href="index.html"><img src="img/HVClubhuis_logo.png" alt="HV Clubhuis logo" class="logo"></a>
+            <i class="fa-solid fa-bars" id="mobile-menu" aria-label="Toggle navigation"></i>
+            <script>
+                document.getElementById('mobile-menu').addEventListener('click', function () {
+                    const nav = document.querySelector('.header-column-right');
+                    nav.classList.toggle('show');
+                });
+            </script>            
         </div>
         <div class="header-column-middle"></div>
         <div class="header-column-right">
             <div class="dropdown">
-                <a href="faciliteiten.html" class="dropdown-btn">Faciliteiten</a>
+                <a href="faciliteiten.html" class="dropdown-btn">Faciliteiten</a><i class="fa-solid fa-chevron-down"></i>
                 <div class="dropdown-content">
                     <a href="menukaart.html">Menukaart</a>
                 </div>
