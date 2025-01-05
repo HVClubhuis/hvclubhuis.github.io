@@ -1,0 +1,27 @@
+:root {
+    --black: #000000;
+    --gold: #bf8f00;
+}
+
+.display-items {
+    cursor: pointer; /* Makes the element clickable */
+    z-index: 10; /* Ensures it's on top of other elements if needed */
+}
+
+.items {
+    display: none; /* Hidden by default */
+    transition: opacity 0.5s ease; /* Optional: Smooth fade-in effect */
+}
+
+.items.show {
+    display: flex; /* Makes the element visible */
+    opacity: 1; /* Ensure visibility when toggled */
+}
+
+/* Rotate the icon when the 'rotate' class is added */
+.display-items i {
+    transition: transform 0.5s ease; /* Smooth transition for rotation */
+}
+.display-items i.rotate {
+    transform: rotate(-180deg); /* Rotates the icon 90 degrees */
+}

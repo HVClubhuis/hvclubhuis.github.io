@@ -54,6 +54,7 @@ header {
     top: 0;
     width: 100%;
     padding: 10px;
+    z-index: 9999;
 }
 
 .header-column-left,
@@ -143,6 +144,12 @@ header {
     align-items: center;
     align-items: stretch;
     justify-content: center;
+}
+
+.main-row img {
+    border-radius: 15px;
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .main-column-left, .main-column-right {
