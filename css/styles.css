@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: "ALGER";
-    src: url('./fonts/ALGER.woff') format('woff'),
-        url('./fonts/ALGER.TTF') format('truetype');
+    src: url('https://hvclubhuis.github.io/fonts/ALGER.woff') format('woff'),
+        url('https://hvclubhuis.github.io/fonts/ALGER.TTF') format('truetype');
 }
 
 * {
