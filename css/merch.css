@@ -1,3 +1,3 @@
-.main-column-left, .main-column-right {
-    border-bottom: 1px solid var(--gold);
+.main-row img {
+    max-height: none;
 }
