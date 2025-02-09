@@ -1,0 +1,27 @@
+#kaart {
+    width: 50%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--gold);
+}
+th {
+    width: 80%;
+}
+td:last-child, th:last-child {
+    text-align: right;
+    width: 20%;
+}
+
+/* CSS for mobile devices */
+@media (max-width: 768px) {
+    #kaart {
+        width: 100%;
+    }
+}
