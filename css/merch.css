@@ -1,3 +1,26 @@
 .main-row img {
     max-height: none;
 }
+
+button {
+    width: 40%;
+}
+
+.switch {
+    align-self: center;
+}
+
+/* CSS for mobile devices */
+@media (max-width: 768px) {
+    main > *:nth-child(even) {
+        flex-direction: column;
+    }
+
+    main > *:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .main-row {
+        border-bottom: 1px solid var(--gold);
+    }
+}

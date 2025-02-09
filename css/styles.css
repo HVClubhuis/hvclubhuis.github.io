@@ -39,6 +39,22 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: 'ALGER';
+    font-weight: normal;
+    background-color: var(--gold);
+    border-radius: 25px;
+    padding: 10px;
+    color: var(--black);
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--gold);
+    cursor: pointer;
+}
+
 p {
     font-size: 20px;
 }
