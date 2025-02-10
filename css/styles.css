@@ -223,6 +223,12 @@ footer {
         bottom: auto;
     }
 
+    button:hover {
+        background-color: var(--gold);
+        color: white;
+        cursor: pointer;
+    }
+
     .header-column-left {
         flex-direction: row;
         justify-content: flex-start; /* Aligns logo to the left */
