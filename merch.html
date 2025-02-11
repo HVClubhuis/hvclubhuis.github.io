@@ -16,6 +16,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Template</title>
     <link rel="shortcut icon" href="img/favicon.ico">
+
+    <script>
+    function bestellen(product, prijs) {
+        const email = "hvclubhuis@gmail.com";
+        const subject = encodeURIComponent(`Bestelling: ${product}`);
+
+        let body = 
+            "Vul het onderstaande formulier in:%0D%0A" +
+            "Product: " + product + "%0D%0A";
+
+        // Alleen "Maat" toevoegen als het geen pet is
+        if (product !== "Pet") {
+            body += "Maat: [Vul je maat in]%0D%0A";
+        }
+
+        body += 
+            "Aantal: [Vul het aantal exemplaren in]%0D%0A" +
+            "Naam: [Vul uw naam in]%0D%0A" +
+            "%0D%0A" + // Lege regel voor overzichtelijkheid
+            "De prijs per stuk is: " + prijs;
+
+        // `body` niet encoden, zodat %0D%0A werkt
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -39,7 +64,7 @@
     <main>
         <div class="main-row">
             <div class="main-column-left">
-                <h1>Merch</h1>
+                <h1>Merch*</h1>
             </div>
             <div class="main-column-right"></div>
         </div>
@@ -48,7 +73,7 @@
                 <h2>HV CLUBHUIS T-shirt</h2>
                 <p>Een mooi shirt</p>
                 <h3>Prijs: €27,30</h3>
-                <button>Bestellen</button>
+                <button onclick="bestellen('T-shirt', '€27,30')">Bestellen</button>
             </div>
             <div class="main-column-right">
                 <img src="img/merch/shirt-voor.png" alt="Het clubhuis">
@@ -64,7 +89,7 @@
                 <h2>HV CLUBHUIS Trui</h2>
                 <p>Een mooie trui</p>
                 <h3>Prijs: €73,28</h3>
-                <button>Bestellen</button>
+                <button onclick="bestellen('Trui', '€73,28')">Bestellen</button>
             </div>
         </div>
         <div class="main-row">
@@ -72,12 +97,13 @@
                 <h2>HV CLUBHUIS Pet</h2>
                 <p>Een mooie pet</p>
                 <h3>Prijs: €23,31</h3>
-                <button>Bestellen</button>
+                <button onclick="bestellen('Pet', '€23,31')">Bestellen</button>
             </div>
             <div class="main-column-right">
                 <img src="img/merch/pet.png" alt="Het clubhuis">
             </div>
         </div>
+        <p style="text-align: center; margin-bottom: 10px;">*LET OP! Dit is geen functionele webshop, u kunt hier niks kopen.</p>
     </main>
     <footer>
         <div class="footer-column-left"></div>
