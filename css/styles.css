@@ -59,6 +59,14 @@ p {
     font-size: 20px;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.hidden-desktop {
+    display: none !important;
+}
+
 header {
     font-family: 'ALGER';
     font-weight: normal;
@@ -226,6 +234,14 @@ footer {
     .header-column-left {
         flex-direction: row;
         justify-content: flex-start; /* Aligns logo to the left */
+    }
+
+    .hidden-desktop {
+        display: unset !important;
+    }
+
+    .hidden-mobile {
+        display: none;
     }
 
     .logo {

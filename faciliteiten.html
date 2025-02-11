@@ -19,9 +19,15 @@
 </head>
 <body>
     <header>
-        <div class="header-column-left">
+        <div  class="header-column-left">
             <a href="index.html"><img src="img/HVClubhuis_logo.png" alt="HV Clubhuis logo" class="logo"></a>
             <i class="fa-solid fa-bars" id="mobile-menu" aria-label="Toggle navigation"></i>
+            <script>
+                document.getElementById('mobile-menu').addEventListener('click', function () {
+                    const nav = document.querySelector('.header-column-right');
+                    nav.classList.toggle('show');
+                });
+            </script>            
         </div>
         <div class="header-column-middle"></div>
         <div class="header-column-right">
@@ -41,23 +47,23 @@
             <div class="main-column-left">
                 <h1>Faciliteiten</h1>
             </div>
-            <div class="main-column-right">
+            <div class="main-column-right hidden-mobile">
             </div>
         </div>
-
         <div class="main-row">
             <div class="main-column-left">
                 <h2 class="display-items">TV <i class="fa-solid fa-chevron-down"></i></h2>
             </div>
-            <div class="main-column-right">
+            <div class="main-column-right hidden-mobile">
             </div>
         </div>
         <div class="main-row items">
             <div class="main-column-left">
-                <h3>Test</h3>
+                <p>Het tuinhuis is voorzien van een tv met daaraan een chromecast met Google tv. 
+                    Hiermee kan er gekeken worden naar films en series van alle dagelijkese streaming diensten.</p>
             </div>
             <div class="main-column-right">
-                <img src="img/het-clubhuis/clubhuis-oost.jpg" alt="Het clubhuis">
+                <img src="img/faciliteiten/wii-games.jpg" alt="Het clubhuis">
             </div>
         </div>
 
@@ -70,10 +76,40 @@
         </div>
         <div class="main-row items">
             <div class="main-column-left">
-                <h3>Meer info over de Wii</h3>
+                <p>Ook is er een Nintendo Wii beschikbaar, hiervoor hebben wij 4 controllers met bijpassende stuurtjes, joysticks en Wii Motion Plus.<br><br>
+                <strong>Vind het spel dat bij u past in de onderstaande lijst:</strong>
+                <ul style="font-size: 20px;">
+                    <li>Chicken Shoot</li>
+                    <li>De Avonturen Van Kuifje: Het Geheim Van De Eenhoorn</li>
+                    <li>Just Dance 2015</li>
+                    <li>Just Dance 3</li>
+                    <li>Just Dance 4 Speciale Editie</li>
+                    <li>Mario Kart Wii</li>
+                    <li>Mario Party 8</li>
+                    <li>Mario Power Tennis</li>
+                    <li>Monopoly</li>
+                    <li>Need For Speed Undercover</li>
+                    <li>New Super Mario Bros.</li>
+                    <li>Skylanders Giants</li>
+                    <li>Skylanders Swap Force</li>
+                    <li>Skylanders Trap Team</li>
+                    <li>Speed Racer</li>
+                    <li>Super Mario Galaxy</li>
+                    <li>Super Mario Galaxy 2</li>
+                    <li>Super Smash Bros. Brawl</li>
+                    <li>The Grim Adventures of Billy & Mandy</li>
+                    <li>The Legend of Zelda: Twilight Princess</li>
+                    <li>WarioWare Smooth Moves</li>
+                    <li>Wii Fit</li>
+                    <li>Wii Sports</li>
+                    <li>Wii Sports Resort</li>
+                    <li>World of Zoo</li>
+                </ul>                
+                </p>
             </div>
-            <div class="main-column-right">
-                <img src="img/het-clubhuis/nintendo-wii.jpg" alt="Nintendo Wii">
+            <div class="main-column-right" style="gap: 20px;">
+                <img src="img/faciliteiten/wii-games.jpg" alt="Wii Games">
+                <img src="img/faciliteiten/wii-games.jpg" alt="Wii Games">
             </div>
         </div>
         <div class="main-row">
@@ -85,10 +121,10 @@
         </div>
         <div class="main-row items">
             <div class="main-column-left">
-                <h3>Meer info over de Wii</h3>
+                <p>Meer info over de Wii</p>
             </div>
             <div class="main-column-right">
-                <img src="img/het-clubhuis/nintendo-wii.jpg" alt="Nintendo Wii">
+                <img src="img/faciliteiten/wii-games.jpg" alt="Nintendo Wii">
             </div>
         </div>
         <div class="main-row">
@@ -100,10 +136,10 @@
         </div>
         <div class="main-row items">
             <div class="main-column-left">
-                <h3>Meer info over de Wii</h3>
+                <p>Meer info over de Wii</p>
             </div>
             <div class="main-column-right">
-                <img src="img/het-clubhuis/nintendo-wii.jpg" alt="Nintendo Wii">
+                <img src="img/faciliteiten/wii-games.jpg" alt="Nintendo Wii">
             </div>
         </div>
         <div class="main-row">
@@ -115,10 +151,10 @@
         </div>
         <div class="main-row items">
             <div class="main-column-left">
-                <h3>Meer info over de Wii</h3>
+                <p>Meer info over de Wii</p>
             </div>
             <div class="main-column-right">
-                <img src="img/het-clubhuis/nintendo-wii.jpg" alt="Nintendo Wii">
+                <img src="img/faciliteiten/wii-games.jpg" alt="Nintendo Wii">
             </div>
         </div>
     </main>
