@@ -69,6 +69,21 @@ ul {
     list-style-type: none;
   }
 
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(50%) sepia(100%) saturate(5000%) hue-rotate(180deg);
+}
+
+input {
+    width: 100%;
+    background-color: white;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 24px;
+    border-radius: 15px;
+    text-align: center;
+}
+
 .hidden {
     display: none !important;
 }
