@@ -24,6 +24,12 @@ html {
 
 body {
     background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 81vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,6 +64,10 @@ button:hover {
 p {
     font-size: 20px;
 }
+
+ul {
+    list-style-type: none;
+  }
 
 .hidden {
     display: none !important;
@@ -249,6 +259,11 @@ footer {
 .inner-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 kolommen per rij */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 
