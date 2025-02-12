@@ -23,13 +23,7 @@
     <header>
         <div  class="header-column-left">
             <a href="index.html"><img src="img/HVClubhuis_logo.png" alt="HV Clubhuis logo" class="logo"></a>
-            <i class="fa-solid fa-bars" id="mobile-menu" aria-label="Toggle navigation"></i>
-            <script>
-                document.getElementById('mobile-menu').addEventListener('click', function () {
-                    const nav = document.querySelector('.header-column-right');
-                    nav.classList.toggle('show');
-                });
-            </script>            
+            <i class="fa-solid fa-bars" id="mobile-menu" aria-label="Toggle navigation"></i>          
         </div>
         <div class="header-column-middle"></div>
         <div class="header-column-right">
@@ -68,11 +62,13 @@
         <div class="footer-column-left"></div>
         <div class="footer-column-middle">
             <p>Copyright &copy; <span id="year"></span> Dennis Geerlof</p>
-            <script>
-                document.getElementById("year").textContent = new Date().getFullYear();
-            </script>
         </div>
         <div class="footer-column-right"></div>
     </footer>
+    <div id="image-popup" class="popup">
+        <img class="popup-content" id="popup-img">
+        <span class="close">&times;</span>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

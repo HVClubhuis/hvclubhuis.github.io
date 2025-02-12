@@ -16,31 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Template</title>
     <link rel="shortcut icon" href="img/favicon.ico">
-
-    <script>
-    function bestellen(product, prijs) {
-        const email = "hvclubhuis@gmail.com";
-        const subject = encodeURIComponent(`Bestelling: ${product}`);
-
-        let body = 
-            "Vul het onderstaande formulier in:%0D%0A" +
-            "Product: " + product + "%0D%0A";
-
-        // Alleen "Maat" toevoegen als het geen pet is
-        if (product !== "Pet") {
-            body += "Maat: [Vul je maat in]%0D%0A";
-        }
-
-        body += 
-            "Aantal: [Vul het aantal exemplaren in]%0D%0A" +
-            "Naam: [Vul uw naam in]%0D%0A" +
-            "%0D%0A" + // Lege regel voor overzichtelijkheid
-            "De prijs per stuk is: " + prijs;
-
-        // `body` niet encoden, zodat %0D%0A werkt
-        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
-    }
-    </script>
 </head>
 <body>
     <header>
@@ -112,35 +87,10 @@
         </div>
         <div class="footer-column-right"></div>
     </footer>
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-
-        document.getElementById('mobile-menu').addEventListener('click', function () {
-            const nav = document.querySelector('.header-column-right');
-            nav.classList.toggle('show');
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const buttons = document.querySelectorAll("button.switch");
-            
-            buttons.forEach(button => {
-                button.addEventListener("click", function () {
-                    const img = this.previousElementSibling;
-                    if (img && img.tagName === "IMG") {
-                        if (img.src.includes("front")) {
-                            img.src = img.src.replace("front", "back");
-                            this.textContent = "Voorkant";
-                        } else if (img.src.includes("voor")) {
-                            img.src = img.src.replace("voor", "achter");
-                            this.textContent = "Voorkant";
-                        } else {
-                            img.src = img.src.replace("back", "front").replace("achter", "voor");
-                            this.textContent = "Achterkant";
-                        }
-                    }
-                });
-            });
-        });
-    </script>
+    <div id="image-popup" class="popup">
+        <img class="popup-content" id="popup-img">
+        <span class="close">&times;</span>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
