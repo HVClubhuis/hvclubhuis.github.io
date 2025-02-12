@@ -246,6 +246,11 @@ footer {
     cursor: pointer;
 }
 
+.inner-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolommen per rij */
+}
+
 
 /* CSS for mobile devices */
 @media (max-width: 768px) {
