@@ -76,12 +76,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 input {
     width: 100%;
-    background-color: white;
+    background-color: var(--black);
     border: 1px solid var(--gold);
     color: var(--gold);
     font-size: 24px;
     border-radius: 15px;
     text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(45%) sepia(80%) saturate(500%) hue-rotate(5deg);
 }
 
 .hidden {
