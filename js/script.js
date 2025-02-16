@@ -93,7 +93,7 @@
         const subject = encodeURIComponent("Nieuwe Reservering");
     
         const body = encodeURIComponent(
-            `Naam: ${naam}\nE-mail: ${userEmail}\nTelefoonnummer: ${telefoon}\nDatum: ${datum}\nTijd: ${tijd}`
+            `Check de onderstaande gegevens:\nNaam: ${naam}\nE-mail: ${userEmail}\nTelefoonnummer: ${telefoon}\nDatum: ${datum}\nTijd: ${tijd}`
         );
     
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
