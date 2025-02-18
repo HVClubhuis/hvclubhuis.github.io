@@ -71,11 +71,6 @@
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     }
 
-    function toonFormulier() {
-        document.getElementById("reservering-form").style.display = "block";
-    }
-    
-
     // reserveer formulier
     function verstuurReservering() {
         const email = "hvclubhuis@gmail.com";

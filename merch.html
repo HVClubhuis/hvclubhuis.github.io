@@ -46,9 +46,35 @@
         <div class="main-row">
             <div class="main-column-left">
                 <h2>HV CLUBHUIS T-shirt</h2>
-                <p>Een mooi shirt</p>
+                <p>Een mooi shirt!</p>
                 <h3>Prijs: €27,30</h3>
-                <button class="bestel-button" onclick="bestellen('T-shirt', '€27,30')">Bestellen</button>
+                <form id="reservering-form">
+                    <table>
+                        <tr>
+                            <td><label for="naam">Naam:</label></td>
+                            <td><input type="text" id="naam" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">E-mail:</label></td>
+                            <td><input type="email" id="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="telefoon">Telefoon:</label></td>
+                            <td><input type="tel" id="telefoon" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="maat">Maat:</label></td>
+                            <td><input type="text" id="maat" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="aantal">Aantal:</label></td>
+                            <td><input type="number" id="aantal" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="button" onclick="bestelShirt()">Bestel</button></td>
+                        </tr>
+                    </table>
+                </form>
             </div>
             <div class="main-column-right">
                 <img src="img/merch/shirt-voor.png" alt="Het clubhuis">
