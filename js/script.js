@@ -1,8 +1,3 @@
-    // mobile menu
-    document.getElementById('mobile-menu').addEventListener('click', function () {
-        const nav = document.querySelector('.header-column-right');
-        nav.classList.toggle('show');
-    });
 
     // dropdown menu
     document.getElementById('mobile-menu').addEventListener('click', function () {
@@ -144,4 +139,10 @@
         if (e.target === this) {
             this.style.display = "none";
         }
+    });
+
+    // mobile menu
+    document.getElementById('mobile-menu').addEventListener('click', function () {
+        const nav = document.querySelector('.header-column-right');
+        nav.classList.toggle('show');
     });
