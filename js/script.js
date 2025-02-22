@@ -1,7 +1,7 @@
 
     // mobile menu
     document.getElementById('mobile-menu').addEventListener('click', function () {
-        const nav = document.querySelector('.header-column-right');
+        const nav = document.querySelector('.header-column-left');
         nav.classList.toggle('show');
     });
 
