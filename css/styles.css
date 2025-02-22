@@ -94,10 +94,6 @@ input[type=number]::-webkit-outer-spin-button {
     filter: invert(45%) sepia(80%) saturate(500%) hue-rotate(5deg);
 }
 
-#show {
-    display: flex;
-}
-
 .hidden {
     display: none !important;
 }
