@@ -9,18 +9,25 @@
 }
 
 .items {
-    display: none; /* Hidden by default */
-    transition: opacity 0.5s ease; /* Optional: Smooth fade-in effect */
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    transition: max-height 1s ease, padding 1s ease, opacity 1s ease;
 }
 
 .items.show {
-    display: flex; /* Makes the element visible */
-    opacity: 1; /* Ensure visibility when toggled */
+    max-height: 1000px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: 1;
 }
+
 
 /* Rotate the icon when the 'rotate' class is added */
 .display-items i {
-    transition: transform 0.5s ease; /* Smooth transition for rotation */
+    transition: transform 1s ease; /* Smooth transition for rotation */
 }
 .display-items i.rotate {
     transform: rotate(-180deg); /* Rotates the icon 90 degrees */
