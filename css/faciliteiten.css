@@ -18,7 +18,7 @@
 }
 
 .items.show {
-    max-height: 1000px;
+    max-height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     opacity: 1;
@@ -31,4 +31,8 @@
 }
 .display-items i.rotate {
     transform: rotate(-180deg); /* Rotates the icon 90 degrees */
+}
+
+.main-column-left, .main-column-right {
+    gap: 30px !important;
 }
