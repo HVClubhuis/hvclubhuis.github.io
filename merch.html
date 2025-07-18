@@ -45,30 +45,47 @@
         </div>
         <div class="main-row">
             <div class="main-column-left">
-                <h2>HV CLUBHUIS T-shirt</h2>
-                <p>Een mooi shirt!</p>
+                <h2>HV Clubhuis T-shirt</h2>
+                <p></p>
                 <h3>Prijs: €<span class="prijs">27.64</span></h3>
                 <form>
                     <table>
                         <tr>
-                            <td><label for="naam">Naam:</label></td>
-                            <td><input type="text" id="naam" required></td>
+                            <td><label for="naam-shirt">Naam:</label></td>
+                            <td><input type="text" id="naam-shirt" required></td>
                         </tr>
                         <tr>
-                            <td><label for="email">E-mail:</label></td>
-                            <td><input type="email" id="email" required></td>
+                            <td><label for="email-shirt">E-mail:</label></td>
+                            <td><input type="email" id="email-shirt" required></td>
                         </tr>
                         <tr>
-                            <td><label for="telefoon">Telefoon:</label></td>
-                            <td><input type="tel" id="telefoon" required></td>
+                            <td><label for="telefoon-shirt">Telefoon:</label></td>
+                            <td><input type="tel" id="telefoon-shirt" required></td>
                         </tr>
                         <tr>
-                            <td><label for="maat">Maat:</label></td>
-                            <td><input type="text" id="maat" required></td>
+                            <td><label>Geslacht:</label></td>
+                            <td>
+                                <input type="radio" id="man-shirt" name="geslacht-shirt" value="Man" required style="width: unset;">
+                                <label for="man-shirt">Man</label><br>
+                                <input type="radio" id="vrouw-shirt" name="geslacht-shirt" value="Vrouw" style="width: unset;">
+                                <label for="vrouw-shirt">Vrouw</label>
+                            </td>
                         </tr>
                         <tr>
-                            <td><label for="aantal">Aantal:</label></td>
-                            <td><input type="number" id="aantal" required></td>
+                            <td><label for="maat-shirt">Maat:</label></td>
+                            <td>
+                                <select id="maat-shirt" name="maat-shirt" required>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="aantal-shirt">Aantal:</label></td>
+                            <td><input type="number" id="aantal-shirt" required></td>
                         </tr>
                         <tr>
                             <td colspan="2"><button type="button" onclick="bestel(this)">Bestel</button>
@@ -88,30 +105,47 @@
                 <button class="switch">Achterkant</button>
             </div>
             <div class="main-column-right">
-                <h2>HV CLUBHUIS Trui</h2>
-                <p>Een mooie trui</p>
+                <h2>HV Clubhuis Trui</h2>
+                <p></p>
                 <h3>Prijs: €<span class="prijs">73.28</span></h3>
                 <form>
                     <table>
                         <tr>
-                            <td><label for="naam">Naam:</label></td>
-                            <td><input type="text" id="naam" required></td>
+                            <td><label for="naam-trui">Naam:</label></td>
+                            <td><input type="text" id="naam-trui" required></td>
                         </tr>
                         <tr>
-                            <td><label for="email">E-mail:</label></td>
-                            <td><input type="email" id="email" required></td>
+                            <td><label for="email-trui">E-mail:</label></td>
+                            <td><input type="email" id="email-trui" required></td>
                         </tr>
                         <tr>
-                            <td><label for="telefoon">Telefoon:</label></td>
-                            <td><input type="tel" id="telefoon" required></td>
+                            <td><label for="telefoon-trui">Telefoon:</label></td>
+                            <td><input type="tel" id="telefoon-trui" required></td>
                         </tr>
                         <tr>
-                            <td><label for="maat">Maat:</label></td>
-                            <td><input type="text" id="maat" required></td>
+                            <td><label>Geslacht:</label></td>
+                            <td>
+                                <input type="radio" id="man-shirt" name="geslacht-shirt" value="Man" required style="width: unset;">
+                                <label for="man-shirt">Man</label><br>
+                                <input type="radio" id="vrouw-shirt" name="geslacht-shirt" value="Vrouw" style="width: unset;">
+                                <label for="vrouw-shirt">Vrouw</label>
+                            </td>
                         </tr>
                         <tr>
-                            <td><label for="aantal">Aantal:</label></td>
-                            <td><input type="number" id="aantal" required></td>
+                            <td><label for="maat-trui">Maat:</label></td>
+                            <td>
+                                <select id="maat-trui" name="maat-trui" required>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="aantal-trui">Aantal:</label></td>
+                            <td><input type="number" id="aantal-trui" required></td>
                         </tr>
                         <tr>
                             <td colspan="2"><button type="button" onclick="bestel(this)">Bestel</button>
@@ -123,30 +157,26 @@
         </div>
         <div class="main-row">
             <div class="main-column-left">
-                <h2>HV CLUBHUIS Pet</h2>
-                <p>Een mooie pet</p>
+                <h2>HV Clubhuis Pet</h2>
+                <p></p>
                 <h3>Prijs: €<span class="prijs">23.31</span></h3>
                 <form>
                     <table>
                         <tr>
-                            <td><label for="naam">Naam:</label></td>
-                            <td><input type="text" id="naam" required></td>
+                            <td><label for="naam-pet">Naam:</label></td>
+                            <td><input type="text" id="naam-pet" required></td>
                         </tr>
                         <tr>
-                            <td><label for="email">E-mail:</label></td>
-                            <td><input type="email" id="email" required></td>
+                            <td><label for="email-pet">E-mail:</label></td>
+                            <td><input type="email" id="email-pet" required></td>
                         </tr>
                         <tr>
-                            <td><label for="telefoon">Telefoon:</label></td>
-                            <td><input type="tel" id="telefoon" required></td>
+                            <td><label for="telefoon-pet">Telefoon:</label></td>
+                            <td><input type="tel" id="telefoon-pet" required></td>
                         </tr>
                         <tr>
-                            <td><label for="maat">Maat:</label></td>
-                            <td><input type="text" id="maat" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="aantal">Aantal:</label></td>
-                            <td><input type="number" id="aantal" required></td>
+                            <td><label for="aantal-pet">Aantal:</label></td>
+                            <td><input type="number" id="aantal-pet" required></td>
                         </tr>
                         <tr>
                             <td colspan="2"><button type="button" onclick="bestel(this)">Bestel</button>

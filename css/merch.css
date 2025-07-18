@@ -10,6 +10,26 @@
     align-self: center;
 }
 
+select {
+    width: 100%;
+    border-radius: 15px;
+    font-size: x-large;
+    text-align: center;
+    background: black;
+    border: 1px solid var(--gold);
+}
+
+/* Style for all radio buttons */
+input[type="radio"] {
+    /* Changes the primary color of the radio button */
+    accent-color: var(--gold); /* Example: a nice blue */
+}
+
+/* Optional: change cursor on hover */
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
 /* CSS for mobile devices */
 @media (max-width: 768px) {
     main > *:nth-child(even) {
