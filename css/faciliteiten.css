@@ -36,3 +36,9 @@
 .main-column-left, .main-column-right {
     gap: 30px !important;
 }
+
+@media (max-width: 768px) {
+    .inner-row {
+        display: flex;
+    }
+}
