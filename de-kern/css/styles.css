@@ -1,0 +1,364 @@
+:root {
+    --black: #000000;
+    --gold: #bf8f00;
+    font-size: x-large;
+}
+
+@font-face {
+    font-family: "ALGER";
+    src: url('https://hvclubhuis.github.io/fonts/ALGER.woff') format('woff'),
+        url('https://hvclubhuis.github.io/fonts/ALGER.TTF') format('truetype');
+    font-display: swap;
+}
+
+/* General scrollbar styling for all browsers */
+html {
+    scrollbar-color: var(--gold) var(--black);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    color: var(--gold);
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 81vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ALGER';
+    font-weight: normal;
+    color: var(--gold);
+    -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
+}
+
+a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+button {
+    font-family: 'ALGER';
+    font-weight: normal;
+    background-color: var(--gold);
+    border-radius: 25px;
+    padding: 10px;
+    color: var(--black);
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--gold);
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(50%) sepia(100%) saturate(5000%) hue-rotate(180deg);
+}
+
+input {
+    width: 100%;
+    background-color: var(--black);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 24px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(45%) sepia(80%) saturate(500%) hue-rotate(5deg);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+    filter: invert(45%) sepia(80%) saturate(500%) hue-rotate(5deg);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hidden-desktop {
+    display: none !important;
+}
+
+header {
+    font-family: 'ALGER';
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gold);
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+}
+
+.header-column-left,
+.header-column-middle,
+.header-column-right {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 15px 0 15px;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+.header-column-middle {
+    justify-content: center;
+}
+
+.header-column-right {
+    justify-content: end;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.header-column-right a {
+    padding: 5px 10px;
+}
+
+.header-column-right a:hover {
+    background-color: var(--gold);
+    color: var(--black);
+    border-radius: 5px;
+}
+
+.header-column-right a:active {
+    background-color: var(--gold);
+    color: var(--black);
+    border-radius: 5px;
+}
+
+/* Dropdown-container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+}
+
+/* Hoofdlink (Faciliteiten) */
+.dropdown-btn {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+/* Dropdown-menu (verborgen standaard) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--black);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    min-width: 150px;
+}
+
+/* Stijl voor dropdown-links */
+.dropdown-content a {
+    display: block;
+    color: var(--gold);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Hover-effect voor dropdown-links */
+.dropdown-content a:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+/* Toon dropdown bij hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-row {
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.main-row img {
+    border-radius: 15px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.main-column-left, .main-column-right {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 25vw;
+}
+
+footer {
+    font-family: 'ALGER';
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    border-top: 1px solid var(--gold);
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+}
+
+.footer-column-left,
+.footer-column-middle,
+.footer-column-right {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 15px 0 15px;
+}
+
+.footer-column-middle {
+    justify-content: center;
+}
+
+.footer-column-right {
+    justify-content: end;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: var(--gold);
+    font-size: 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inner-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolommen per rij */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CSS for mobile devices */
+@media (max-width: 768px) {
+    * {
+        flex-direction: column;
+    }
+
+    header {
+        align-items: start;
+    }
+
+    footer {
+        bottom: auto;
+    }
+
+    button:hover {
+        background-color: var(--gold);
+        color: white;
+        cursor: pointer;
+    }
+
+    .header-column-left {
+        flex-direction: row;
+        justify-content: flex-start; /* Aligns logo to the left */
+    }
+
+    .hidden-desktop {
+        display: unset !important;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        display: block;
+        right: 15px;
+    }
+
+    .main-column-left, .main-column-right {
+        width: auto;
+    }
+
+    main > *:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    
+
+    .header-column-right {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust to be below the header */
+        right: 10px;
+        background-color: var(--black);
+        padding: 10px;
+        border: 1px solid var(--gold);
+        border-radius: 5px;
+    }
+
+    .header-column-right.show {
+        display: flex; /* Show when toggled */
+    }
+}
