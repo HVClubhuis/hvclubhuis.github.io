@@ -206,12 +206,6 @@ header {
     justify-content: center;
 }
 
-.main-row img {
-    border-radius: 15px;
-    max-height: 400px;
-    object-fit: cover;
-}
-
 .main-column-left, .main-column-right {
     display: flex;
     flex-direction: column;
@@ -290,6 +284,12 @@ footer {
 .center {
     display: flex;
     justify-content: center;
+}
+
+.full-height {
+    min-height: 100vh;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 

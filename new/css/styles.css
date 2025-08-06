@@ -1,0 +1,33 @@
+:root {
+    --black: #000000;
+    --gold: #bf8f00;
+    font-size: x-large;
+}
+
+@font-face {
+    font-family: "ALGER";
+    src: url('https://hvclubhuis.github.io/fonts/ALGER.woff') format('woff'),
+        url('https://hvclubhuis.github.io/fonts/ALGER.TTF') format('truetype');
+    font-display: swap;
+}
+
+/* General scrollbar styling for all browsers */
+html {
+    scrollbar-color: var(--gold) var(--black);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    color: var(--gold);
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 81vh;
+}
